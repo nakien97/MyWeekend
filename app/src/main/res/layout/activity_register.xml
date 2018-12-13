@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@drawable/custom_layout">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBarRegister"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:gravity="center"
+        app:title="Đăng ký tài khoản"
+        android:layout_height="?android:attr/actionBarSize"/>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/custom_edit_text"
+        android:drawableStart="@drawable/fullname"
+        android:drawablePadding="3dp"
+        android:hint="@string/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarRegister" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/custom_edit_text"
+        android:drawablePadding="3dp"
+        android:drawableStart="@drawable/mail"
+        android:paddingEnd="2dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+    <EditText
+        android:id="@+id/editTextPass"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/custom_edit_text"
+        android:drawableStart="@drawable/keyblack"
+        android:drawablePadding="3dp"
+        android:hint="Mật khẩu"
+        android:paddingEnd="2dp"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <EditText
+        android:id="@+id/editTextReType"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/custom_edit_text"
+        android:drawableStart="@drawable/keywhite"
+        android:drawablePadding="3dp"
+        android:hint="Nhập lại mật khẩu"
+        android:paddingEnd="2dp"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPass" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/custom_edit_text"
+        android:drawablePadding="3dp"
+        android:hint="Số điện thoại"
+        android:drawableStart="@drawable/numphone"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextReType" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/custom_button"
+        android:text="Đăng ký"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+</android.support.constraint.ConstraintLayout>

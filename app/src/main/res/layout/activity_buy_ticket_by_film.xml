@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/custom_layout"
+    tools:context=".BuyTicketByFilm">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBarBuyTicketByFilm"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#fff"
+        android:gravity="center"/>
+    <devs.mulham.horizontalcalendar.HorizontalCalendarView
+        android:id="@+id/calendarViewFilm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:textColorSelected="#fd8d31"
+        app:textColorNormal="@color/text_content"
+        app:selectorColor="#fd8d31"
+        android:background="#fff">
+    </devs.mulham.horizontalcalendar.HorizontalCalendarView>
+    <FrameLayout
+        android:id="@+id/id_container_film"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

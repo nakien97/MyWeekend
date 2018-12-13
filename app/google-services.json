@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "787407476690",
+    "firebase_url": "https://nienluancoso-9eee1.firebaseio.com",
+    "project_id": "nienluancoso-9eee1",
+    "storage_bucket": "nienluancoso-9eee1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787407476690:android:6306eb414e744fe8",
+        "android_client_info": {
+          "package_name": "com.nakien.myweekend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787407476690-f5kav08rbndsd38mrtr4pnfn3qcambf6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nakien.myweekend",
+            "certificate_hash": "a37ef66356e1ec47977bfa7bd486ee0c3991b1e8"
+          }
+        },
+        {
+          "client_id": "787407476690-oet2gbfvhago4uask8fkk1ukf5b2vfu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC83j5qWCjAOFX7tHsKjvFCSYgMI6EV0vk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787407476690-oet2gbfvhago4uask8fkk1ukf5b2vfu0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

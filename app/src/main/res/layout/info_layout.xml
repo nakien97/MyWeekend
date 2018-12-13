@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1e1d1d">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewFilmName"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:text=""
+                android:maxWidth="240dp"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <Button
+                android:layout_marginLeft="2dp"
+                android:id="@+id/buttonAge"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/custom_button2"
+                android:text=""
+                android:textColor="#cf2230" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewDate_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text=""
+            android:textColor="#9b6e0e"
+            android:textSize="13dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="34dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonMainDatVe"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/linearLayout2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/custom_button"
+        android:text="Đặt vé"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent" />
+</RelativeLayout>

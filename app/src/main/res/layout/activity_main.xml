@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayoutHomepage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolBarHomePage"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/toolbar_border"
+                app:title="Trang chính" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ViewFlipper
+                        android:id="@+id/viewFlipperADS"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"/>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/text_content"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:text="Phim HOT"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </android.support.v7.widget.CardView>
+                    <com.tmall.ultraviewpager.UltraViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="280dp"
+                        android:background="#1e1d1d"/>
+                    <include
+                        android:layout_height="65dp"
+                        android:layout_width="match_parent"
+                        layout="@layout/info_layout"/>
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigationMenu"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#fff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:background="@drawable/custom_layout"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/wlogo" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/listViewMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

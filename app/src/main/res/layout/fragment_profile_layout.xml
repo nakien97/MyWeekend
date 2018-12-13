@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfdbdb"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email:"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorOfText" />
+
+                        <EditText
+                            android:id="@+id/editTextProfileEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:drawablePadding="3dp"
+                            android:drawableStart="@drawable/mail"
+                            android:enabled="false"
+                            android:textColor="#d65917"
+                            android:background="@drawable/custom_edit_text" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Họ tên:"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorOfText" />
+
+                        <EditText
+                            android:id="@+id/editTextProfileName"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_height="40dp"
+                            android:drawableStart="@drawable/fullname"
+                            android:drawablePadding="3dp"
+                            android:layout_marginRight="15dp"
+                            android:textColor="@color/colorOfText"
+                            android:background="@drawable/custom_edit_text" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Số điện thoại:"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorOfText" />
+                        <EditText
+                            android:id="@+id/editTextProfilePhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:drawablePadding="3dp"
+                            android:layout_marginLeft="15dp"
+                            android:drawableStart="@drawable/numphone"
+                            android:background="@drawable/custom_edit_text"
+                            android:textColor="@color/colorOfText"
+                            android:layout_marginRight="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mật khẩu hiện tại:"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorOfText" />
+                        <EditText
+                            android:id="@+id/editTextPW_OldPass"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/custom_edit_text"
+                            android:inputType="textPassword"
+                            android:drawableStart="@drawable/keyblack"
+                            android:drawablePadding="3dp"
+                            android:textColor="@color/colorOfText"
+                            android:layout_marginRight="15dp" />
+                        <TextView
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mật khẩu mới:"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorOfText" />
+                        <EditText
+                            android:id="@+id/editTextPW_NewPass"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/custom_edit_text"
+                            android:inputType="textPassword"
+                            android:drawableStart="@drawable/keywhite"
+                            android:drawablePadding="3dp"
+                            android:textColor="@color/colorOfText"
+                            android:layout_marginRight="15dp" />
+                        <TextView
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nhập lại mật khẩu mới:"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorOfText" />
+                        <EditText
+                            android:layout_marginLeft="15dp"
+                            android:id="@+id/editTextPW_Retype"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/custom_edit_text"
+                            android:inputType="textPassword"
+                            android:drawableStart="@drawable/keywhite"
+                            android:drawablePadding="3dp"
+                            android:textColor="@color/colorOfText"
+                            android:layout_marginRight="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <Button
+                android:id="@+id/buttonProfileUpdate"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="#20af07"
+                android:text="Cập nhật thông tin"
+                android:textColor="#fff"
+                tools:layout_editor_absoluteX="92dp"
+                tools:layout_editor_absoluteY="207dp" />
+        </LinearLayout>
+</ScrollView>
